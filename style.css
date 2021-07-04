@@ -1,0 +1,75 @@
+body {
+     background-color: antiquewhite;
+   }
+   H1 {
+     font-family: fantasy;
+   }
+   .container {
+     margin: 0;
+     flex-direction: column;
+   }
+   .flex-box {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   #screen {
+     width: 350px;
+     height: 116px;
+     background-color: rgb(190, 190, 190);
+     border: 1.5px solid gray;
+     flex-direction: column;
+     position: relative;
+   }
+   input {
+     font-family: fantasy;
+     font-size: 2rem;
+     width: 335px;
+     height: 62px;
+     position: absolute;
+     text-align: right;
+     border: none;
+     padding-right: 9px;
+     background-color: rgb(190, 190, 190);
+   }
+   
+   #exp {
+     top: 4px;
+     height: 84px;
+   }
+   #exp::placeholder {
+     color: #000000;
+   }
+   
+   #ans {
+     z-index: 10;
+     top: 70px;
+     height: 40px;
+     color: rgb(70, 70, 70);
+     font-size: 1.5rem;
+   }
+   
+   .keypad {
+     /* background-color: rgb(42, 75, 165); */
+     width: 350px;
+     height: 450px;
+     border: 1.5px solid gray;
+   }
+   
+   button {
+     width: 85.5px;
+     height: 88px;
+     font-family: fantasy;
+     font-size: 2rem;
+     border: none;
+     background-color: rgb(128, 128, 128);
+     transition: background-color, 330ms ease-out;
+   }
+   button:hover {
+     background-color: rgb(194, 194, 194);
+   }
+   td {
+     padding: 0;
+   }
+   
