@@ -51,4 +51,17 @@ window.addEventListener("keydown", (e2) => {
         expVal += keyVal;
     }
     expj.value = expVal;
+    // keyVal =;
 });
+
+// setInterval(() => {
+//     let chan = Number(expj);
+//     ansj.value = eval(chan);
+//     // console.log(chan);
+//     if (ansj.value == "undefined") {
+//         ansj.value = "0";
+//     }
+
+//     // console.log(chan);
+//     if (chan == Number) {}
+// }, 1);
