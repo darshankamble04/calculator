@@ -44,7 +44,7 @@ window.addEventListener("keydown", (e2) => {
         console.log("× is print");
     } else if (keyVal == "÷") {
         expVal += "/";
-    } else if (keyVal == "Backspacs") {
+    } else if (keyVal == "Backspace") {
         expVal = expVal.slice(0, -1);
     } else {
         expVal += keyVal;
