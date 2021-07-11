@@ -1,7 +1,6 @@
 let expj = document.getElementById("exp");
 let ansj = document.getElementById("ans");
 let expVal = "";
-let mirrorVal = "";
 let buttons = document.querySelectorAll("button");
 for (ele of buttons) {
     console.log(ele);
