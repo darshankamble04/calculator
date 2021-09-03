@@ -51,6 +51,7 @@ input {
 #exp {
     top: 4px;
     height: 84px;
+    color: #000000;
 }
 
 #exp::placeholder {

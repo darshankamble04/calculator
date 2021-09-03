@@ -1,5 +1,5 @@
-let expj = document.getElementById("exp");
-let ansj = document.getElementById("ans");
+const expj = document.getElementById("exp");
+const ansj = document.getElementById("ans");
 let expVal = "";
 let mirrorVal = "";
 let buttons = document.querySelectorAll("button");
@@ -36,6 +36,7 @@ for (ele of buttons) {
 
 window.addEventListener("keydown", (e2) => {
     let keyVal = e2.key;
+    let arr = ['(', ')', '7', '8', '9', '4', '5', '6', '1', '2', '3', '+', '.', '0', '-']
     console.log(keyVal);
     if (keyVal == "=" || keyVal == "Enter") {
         ansj.value = eval(expVal);
@@ -53,13 +54,14 @@ window.addEventListener("keydown", (e2) => {
     } else if (keyVal == "Backspace") {
         expVal = expVal.slice(0, -1);
         mirrorVal = mirrorVal.slice(0, -1);
-    } else {
+    } else if (arr.includes(keyVal)) {
         expVal += keyVal;
         mirrorVal += keyVal;
     }
 
     expj.value = mirrorVal;
 });
+
 setInterval(() => {
     try {
         ansj.value = eval(expVal);
@@ -67,7 +69,6 @@ setInterval(() => {
         ansj.value += "";
     }
     if (ansj.value == "undefined") {
-        // console.log("und");
         ansj.value = 0;
     }
 }, 0.1);
